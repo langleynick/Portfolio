@@ -5,6 +5,7 @@ const metadata : any = {
     siteUrl: "",
     siteLogo: "",
     linkedin: "",
-    instagram: ""
+    instagram: "",
+    github: ""
 }
 export default metadata
