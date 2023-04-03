@@ -4,8 +4,8 @@ const metadata : any = {
     email: "Langleyndev@outlook.com",
     siteUrl: "",
     siteLogo: "",
-    linkedin: "",
-    instagram: "",
-    github: ""
+    linkedin: "https://linkedin.com",
+    instagram: "https://instagram.com",
+    github: "https://github.com"
 }
 export default metadata
