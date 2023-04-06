@@ -3,7 +3,7 @@ import Link from "next/link";
 import Nav from "react-bootstrap/Nav";
 import metadata from "../data/metadata";
 
-class Footer extends React.Component {
+export class Footer extends React.Component {
     render() {
         return (
             <footer className="d-flex flex-wrap justify-content-between align-items-center footer p-3 w-75 m-auto mt-auto mb-4 rounded-4 bg-dark fixed-bottom">
@@ -26,5 +26,3 @@ class Footer extends React.Component {
         )
     }
 }
-
-export default Footer
