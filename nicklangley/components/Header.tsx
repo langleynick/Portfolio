@@ -7,7 +7,7 @@ class Header extends React.Component {
     render() {
     return (
       <header>
-          <Navbar collapseOnSelect className="w-75 p-0 m-auto mt-4 rounded-4 sticky-top" expand="lg" bg="dark" variant="dark" role='navigation'>
+          <Navbar collapseOnSelect className="w-75 m-auto mt-4 rounded-4" expand="lg" bg="dark" variant="dark" role='navigation'>
             <Container fluid className='m-1 p-1'>
               <Navbar.Brand className="font-weight-bold fs-1 mx-4" id="initials" href="/">NL</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
