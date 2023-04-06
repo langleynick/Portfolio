@@ -1,7 +1,6 @@
 import Seo from '../../components/Seo'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import ProjectsList from '../../components/Projects'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,10 +11,13 @@ export default function Home() {
         title = {'Projects - Nick Langley'}
         description = {'The Home landing page for the Portfolio of Nicholas Langley'}
       ></Seo>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          
+      <main>
+        <div className='row'>
+          <div className='col'>
+            <h1 className='fw-bold text-center my-5'>My Projects</h1>
+          </div>
         </div>
+        <ProjectsList></ProjectsList>
       </main>
     </>
   )

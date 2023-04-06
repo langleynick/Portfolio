@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import React from "react";
 
-export class Header extends React.Component {
+export default class Header extends React.Component {
     render() {
     return (
       <header>
@@ -15,7 +15,7 @@ export class Header extends React.Component {
                 <Nav className='me-auto fs-5'>
                   <Nav.Link className="mx-1 btn btn-outline-secondary border-0" href="/">Home</Nav.Link>
                   <Nav.Link className="mx-1 btn btn-outline-secondary border-0" href="/about">About Me</Nav.Link>
-                  <Nav.Link className="mx-1 btn btn-outline-secondary border-0" href="/projects">My Projects</Nav.Link>
+                  <Nav.Link className="mx-1 btn btn-outline-secondary border-0" href="/myProjects">My Projects</Nav.Link>
                   <Nav.Link className="mx-1 btn btn-outline-secondary border-0" href="/connect">Connect</Nav.Link>
                 </Nav>
               </Navbar.Collapse>

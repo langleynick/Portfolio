@@ -110,7 +110,7 @@ main {
 .text-primary {
   color: rgba(150,93,233,1) !important;
 }
-#image-focus {
+.image-focus {
   border-color: rgba(99,88,238,1) !important;
 }
 a {

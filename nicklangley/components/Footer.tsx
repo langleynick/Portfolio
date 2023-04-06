@@ -3,15 +3,15 @@ import Link from "next/link";
 import Nav from "react-bootstrap/Nav";
 import metadata from "../data/metadata";
 
-export class Footer extends React.Component {
+export default class Footer extends React.Component {
     render() {
         return (
-            <footer className="d-flex flex-wrap justify-content-between align-items-center footer p-3 w-75 m-auto mt-auto mb-4 rounded-4 bg-dark fixed-bottom">
-                    <div className="col d-flex justify-content-left align-items-center">
+            <footer className="d-flex flex-wrap align-items-center footer p-3 m-auto mt-auto bg-dark">
+                    <div className="col d-flex justify-content-center align-items-center">
                         <Nav.Link href="/" className="font-weight-bold fs-1 mx-3" id="initials">NL</Nav.Link>
                         <span className="mx-3">&nbsp;&copy;&nbsp;{metadata.year} N. Langley</span>
                     </div>
-                    <ul className="nav col justify-content-end list-unstyled d-flex mx-3">
+                    <ul className="nav col justify-content-center list-unstyled d-flex mx-3">
                         <li className="ms-4">
                             <Link href={metadata.instagram}><i className="bi bi-instagram text-light fs-4"></i></Link>
                         </li>
