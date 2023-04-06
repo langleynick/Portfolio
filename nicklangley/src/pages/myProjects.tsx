@@ -15,6 +15,7 @@ export default function Home() {
         <div className='row'>
           <div className='col'>
             <h1 className='fw-bold text-center my-5'>My Projects</h1>
+            <a href='https://github.com/langleynick/Portfolio' role='button' className='btn btn-outline-secondary'>Check out this site's code</a>
           </div>
         </div>
         <ProjectsList></ProjectsList>

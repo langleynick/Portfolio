@@ -7,7 +7,7 @@ export default class ProjectsList extends React.Component {
         return(
             <div className='container'>
             {projectList.map(data => (
-                <div className='row justify-content-center text-dark fw-bold my-3' key={data.key}>
+                <div className='row justify-content-center text-dark fw-bold my-3' key={data.id}>
                     <div className='col-md-11 col-lg-6 bg-light rounded-5 text-center'>
                         <h2 className='text-primary fw-bold mt-3 mb-4'>{data.name}</h2>
                         <Image 
