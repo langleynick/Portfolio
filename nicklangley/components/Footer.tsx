@@ -13,13 +13,13 @@ export default class Footer extends React.Component {
                     </div>
                     <ul className="nav col justify-content-center list-unstyled d-flex mx-3">
                         <li className="ms-4">
-                            <Link href={metadata.instagram}><i className="bi bi-instagram text-light fs-4"></i></Link>
+                            <Link href={metadata.instagram} prefetch={false}><i className="bi bi-instagram text-light fs-4"></i></Link>
                         </li>
                         <li className="ms-4">
-                            <Link href={metadata.linkedin}><i className="bi bi-linkedin text-light fs-4"></i></Link>
+                            <Link href={metadata.linkedin} prefetch={false}><i className="bi bi-linkedin text-light fs-4"></i></Link>
                         </li>
                         <li className="ms-4">
-                            <Link href={metadata.github}><i className="bi bi-github text-light fs-4"></i></Link>
+                            <Link href={metadata.github} prefetch={false}><i className="bi bi-github text-light fs-4"></i></Link>
                         </li>
                     </ul>
             </footer>

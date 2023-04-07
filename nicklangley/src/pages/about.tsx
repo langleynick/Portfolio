@@ -1,8 +1,4 @@
 import Seo from '../../components/Seo'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -14,7 +10,7 @@ export default function Home() {
       <main>
         <div className='container-fluid col-sm-12 col-md-8'>
           <div className='row justify-content-center'>
-              <div className='col-3 my-5 text-center'>
+              <div className='col-5 my-5 text-center'>
                 <h1 id='header-title'>About me.</h1>
               </div>
           </div>

@@ -1,8 +1,7 @@
 import Seo from '../../components/Seo'
-import { Inter } from 'next/font/google'
-import ProjectsList from '../../components/Projects'
+import dynamic from 'next/dynamic';
 
-const inter = Inter({ subsets: ['latin'] })
+const DynamicList = dynamic(() => import('../../components/Projects'));
 
 export default function Home() {
   return (
@@ -13,7 +12,7 @@ export default function Home() {
       ></Seo>
       <main>
         <div className='row justify-content-center'>
-          <div className='col-3 my-5 text-center'>
+          <div className='col-5 my-5 text-center'>
             <h1 id='header-title'>My Projects.</h1>
           </div>
         </div>
@@ -22,7 +21,7 @@ export default function Home() {
             <a href='https://github.com/langleynick/Portfolio' role='button' className='btn btn-lg btn-dark mb-2'>Check out this site's code</a>
           </div>
         </div>
-        <ProjectsList></ProjectsList>
+        <DynamicList></DynamicList>
       </main>
     </>
   )

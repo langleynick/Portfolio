@@ -1,5 +1,4 @@
 import Seo from '../../components/Seo'
-import "bootstrap/dist/css/bootstrap.min.css"
 import Image from 'next/image'
 
 export default function Home() {
@@ -12,7 +11,7 @@ export default function Home() {
       <main>
         <div className='container-fluid'>
           <div className='row mb-4 justify-content-center'>
-            <div className='col-3 my-5 text-center'>
+            <div className='col-5 my-5 text-center'>
               <h1 id='header-title'>Hello World.</h1>
             </div>
           </div>
