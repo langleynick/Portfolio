@@ -103,6 +103,24 @@ main {
     opacity: 1;
   }
 }
+#brackets-wrap {
+  background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% ),
+                    linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% ),
+                    linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% ),
+                    linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+
+  background-repeat: no-repeat;
+  background-size: 10px 5px;
+  background-position: top left, top right, bottom left, bottom right;
+
+  border: solid rgba(99,88,238,1);
+  border-width: 0 5px;
+}
+#header-title {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 50px;
+}
 #initials {
   font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
   letter-spacing: 0.2rem;
