@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Seo
         title = {'Projects - Nick Langley'}
-        description = {'The Home landing page for the Portfolio of Nicholas Langley'}
+        description = {'View my most recent (and favourite) projects here!'}
       ></Seo>
       <main>
         <div className='row justify-content-center'>

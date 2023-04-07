@@ -88,7 +88,7 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 main {
-  animation: fadeIn 2s linear 1 forwards;
+  animation: fadeIn 1.5s linear 1 forwards;
   margin-top: 25px;
   margin-bottom: 125px;
 }
