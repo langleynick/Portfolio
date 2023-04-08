@@ -10,3 +10,4 @@ Date: April 2023
  Bootstrap CSS and JS will be imported and used aswell
 
  Vercel will be used to deploy the website from Github
+
