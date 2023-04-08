@@ -48,7 +48,7 @@ const Footer = () => {
     )
 };
 
-const Layout = ({ children }) => {
+const Layout = ({ children } : any) => {
     return (
         <>
             <Header />
