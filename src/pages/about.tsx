@@ -7,10 +7,9 @@ export default function Home() {
         title = {'About - Nick Langley'}
         description = {'A page all about me! Learn more about me and what makes me tick.'}
       ></Seo>
-      <main>
-        <div className='container-fluid col-sm-12 col-md-8'>
+        <div className='container-fluid'>
           <div className='row justify-content-center'>
-              <div className='col-5'>
+              <div className='col mt-5'>
                 <h1 id='header-title'>About me.</h1>
               </div>
           </div>
@@ -55,7 +54,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </main>
     </>
   )
 }

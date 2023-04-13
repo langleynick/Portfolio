@@ -2,13 +2,11 @@ import React from 'react'
 import Image from 'next/image';
 import projectList from "../data/projectList";
 
-export default class ProjectsList extends React.Component {
-    render() {
+export default function ProjectsList() {
         return(
-            <div className='container'>
+            <div className='row gap-4 justify-content-center'>
             {projectList.map(item => (
-                <div className='row justify-content-center' key={item.id}>
-                    <div className='col-md-11 col-lg-6 bg-dark rounded-5 text-center'>
+                <div className='col-md-11 col-xl-5 bg-dark rounded-5 text-center' key={item.id}>
                         <h2 className='text-primary mt-3 mb-4'>{item.name}</h2>
                         <Image
                         src={item.img}
@@ -19,13 +17,11 @@ export default class ProjectsList extends React.Component {
                         blurDataURL='URL'
                         placeholder='blur'
                         ></Image>
-                        <p className='fst-italic text-primary'>{item.languages}</p>
+                        <p className='fw-bold fst-italic text-primary'>{item.languages}</p>
                         <p className='px-3'>{item.description}</p>
                         <a href={item.githubUrl} role='button' target='_blank'className='btn btn-outline-secondary text-light mb-3'>View my work</a>
                     </div>
-                </div>
              ))}
-            </div>
+             </div>
         )
-    }
 }

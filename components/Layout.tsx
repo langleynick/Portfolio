@@ -16,23 +16,10 @@ const Header = () => {
                 <Nav className='me-auto fs-5'>
                   <Nav.Link className="mx-1 btn btn-outline-secondary border-0" href="/">Home</Nav.Link>
                   <Nav.Link className="mx-1 btn btn-outline-secondary border-0" href="/about">About Me</Nav.Link>
-                  <Nav.Link className="mx-1 btn btn-outline-secondary border-0" href="/myProjects">My Projects</Nav.Link>
+                  <Nav.Link className="mx-1 btn btn-outline-secondary border-0" href="/projects">My Projects</Nav.Link>
                   <Nav.Link className="mx-1 btn btn-outline-secondary border-0" href="/connect">Connect</Nav.Link>
                 </Nav>
-              </Navbar.Collapse>
-            </Container>
-          </Navbar>
-        </header>
-    )
-};
-
-const Footer = () => {
-    return (
-        <footer className="d-flex flex-wrap align-items-center footer p-3 m-auto mt-auto bg-dark">
-                    <div className="col d-flex justify-content-center align-items-center">
-                        <Nav.Link href="/" className="font-weight-bold fs-1 mx-3" id="initials">NL</Nav.Link>
-                        <span className="mx-3">&nbsp;&copy;&nbsp;{metadata.year} N. Langley</span>
-                    </div>
+                <div>
                     <ul className="nav col justify-content-center list-unstyled d-flex mx-3">
                         <li className="ms-4">
                             <Link href={metadata.instagram}><i className="bi bi-instagram text-light fs-4"></i></Link>
@@ -44,7 +31,54 @@ const Footer = () => {
                             <Link href={metadata.github}><i className="bi bi-github text-light fs-4"></i></Link>
                         </li>
                     </ul>
-            </footer>
+                </div>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+        </header>
+    )
+};
+
+const Footer = () => {
+    return (
+        <footer className="footer mt-auto py-4 bg-dark">
+            <div className="container w-75 m-auto">
+                <div className="row">
+                    <div className="col m-auto">
+                        <ul className="d-flex gap-5 list-inline justify-content-center">
+                            <li className="btn btn-outline-secondary border-0 list-inline-item">
+                                <Link href='/' className="link-light">Home</Link>
+                            </li>
+                            <li className="btn btn-outline-secondary border-0 list-inline-item">
+                                <Link href='/about' className="link-light">About Me</Link>
+                            </li>
+                            <li className="btn btn-outline-secondary border-0 list-inline-item">
+                                <Link href='/projects' className="link-light">My Projects</Link>
+                            </li>
+                            <li className="btn btn-outline-secondary border-0 list-inline-item">
+                                <Link href='/connect' className="link-light">Connect</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="d-flex flex-column flex-sm-row justify-content-between pt-4 border-top border-secondary">
+                    <div className="col d-flex">
+                        <p>&copy; {metadata.year} N. Langley</p>
+                    </div>
+                    <ul className="justify-content-end list-unstyled d-flex">
+                        <li className="ms-4">
+                            <Link href={metadata.instagram}><i className="bi bi-instagram text-light fs-4"></i></Link>
+                        </li>
+                        <li className="ms-4">
+                            <Link href={metadata.linkedin}><i className="bi bi-linkedin text-light fs-4"></i></Link>
+                        </li>
+                        <li className="ms-4">
+                            <Link href={metadata.github}><i className="bi bi-github text-light fs-4"></i></Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     )
 };
 
@@ -52,7 +86,9 @@ const Layout = ({ children } : any) => {
     return (
         <>
             <Header />
-            {children}
+                <main className="w-75 m-auto my-5 min-vh-100">
+                    {children}
+                </main>
             <Footer />
         </>
     );

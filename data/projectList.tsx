@@ -2,7 +2,7 @@ const projects : any [] = [
     {
         "id": "1",
         "name": "City Cyclery Custom Build",
-        "languages": "Next.JS, Typescript, React-Bootstrap, Figma, HTML, CSS",
+        "languages": "Next.JS, Typescript, Tailwind CSS, Figma, HTML",
         "img": "/city-cyclery-website.jpg",
         "githubUrl": "",
         "description": "A custom static website I created through school for a local bike shop. I contributed to the entire process end-to-end, creating mock-ups and getting client approval before delivery."
